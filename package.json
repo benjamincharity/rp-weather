@@ -1,39 +1,9 @@
 {
-  "name": "vite-react-boilerplate",
-  "author": "Ricardo Valdovinos <ricardovaldovinos1996@gmail.com>",
-  "description": "A production ready, batteries included starter template for Vite + React projects",
-  "keywords": [
-    "vite",
-    "react",
-    "boilerplate",
-    "starter",
-    "template"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/RicardoValdovinos/vite-react-boilerplate"
-  },
-  "license": "MIT",
-  "version": "1.0.0",
-  "type": "module",
-  "scripts": {
-    "setup": "git init && husky install && npx playwright install",
-    "format": "prettier src/**/*.{ts,tsx} --write",
-    "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "lint:fix": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0 --fix",
-    "dev": "vite",
-    "storybook": "storybook dev -p 6006",
-    "storybook:setup": "node node_modules/@storybook/addon-styling/bin/postinstall.js",
-    "storybook:build": "storybook build",
-    "test": "vitest run src/ && playwright test",
-    "test:unit": "vitest src/",
-    "test:unit:coverage": "vitest --coverage src/",
-    "test:e2e": "playwright test",
-    "test:e2e:report": "playwright show-report",
-    "build": "tsc && vite build",
-    "preview": "vite preview",
-    "commitlint": "commitlint --edit",
-    "commitizen": "exec < /dev/tty && git cz --hook || true"
+  "author": "Benjamin Charity <ben.charity@hey.com>",
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   },
   "dependencies": {
     "@hookform/resolvers": "^3.3.4",
@@ -59,6 +29,7 @@
     "zod": "^3.22.4",
     "zustand": "^4.5.0"
   },
+  "description": "A take home project!",
   "devDependencies": {
     "@commitlint/cli": "^18.6.0",
     "@commitlint/config-conventional": "^18.6.0",
@@ -112,9 +83,39 @@
     "vite": "4.4.7",
     "vitest": "0.33.0"
   },
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
-    }
-  }
+  "homepage": "https://benjamincharity.github.io/rp-weather",
+  "keywords": [
+    "vite",
+    "react",
+    "boilerplate",
+    "starter",
+    "template"
+  ],
+  "license": "MIT",
+  "name": "rp-weather",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/benjamincharity/rp-weather"
+  },
+  "scripts": {
+    "build": "tsc && vite build",
+    "commitizen": "exec < /dev/tty && git cz --hook || true",
+    "commitlint": "commitlint --edit",
+    "dev": "vite",
+    "format": "prettier src/**/*.{ts,tsx} --write",
+    "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "lint:fix": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0 --fix",
+    "preview": "vite preview",
+    "setup": "git init && husky install && npx playwright install",
+    "storybook": "storybook dev -p 6006",
+    "storybook:build": "storybook build",
+    "storybook:setup": "node node_modules/@storybook/addon-styling/bin/postinstall.js",
+    "test": "vitest run src/ && playwright test",
+    "test:e2e": "playwright test",
+    "test:e2e:report": "playwright show-report",
+    "test:unit": "vitest src/",
+    "test:unit:coverage": "vitest --coverage src/"
+  },
+  "type": "module",
+  "version": "1.0.0"
 }

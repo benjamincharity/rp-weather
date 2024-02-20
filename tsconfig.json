@@ -10,7 +10,7 @@
     "paths": {
       "@common/*": ["src/common/*"],
       "@hooks/*": ["src/hooks/*"],
-      "@ui/*": ["src/components/ui/*"]
+      "@ui/*": ["src/components/ui/*"],
     },
     "moduleResolution": "bundler",
     "allowImportingTsExtensions": true,
@@ -25,7 +25,7 @@
     "noImplicitOverride": true,
     "noImplicitReturns": true,
     "noPropertyAccessFromIndexSignature": true,
-    "noUncheckedIndexedAccess": true
+    "noUncheckedIndexedAccess": true,
   },
   "include": ["src", "e2e"],
   "references": [{ "path": "./tsconfig.node.json" }],

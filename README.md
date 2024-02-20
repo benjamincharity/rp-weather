@@ -6,6 +6,17 @@
 - Run `pnpm i` to install the dependencies
 - Run `pnpm dev` to start the app
 
+### Test build
+
+- Run `pnpm build` to build the app
+- Run `pnpm preview` to start the app
+
+### Deploy
+
+- Merge code to the `main` branch
+
+Online: https://benjamincharity.github.io/rp-weather/
+
 ## Technical Stack Choices
 
 The selection of the starter template and its dependencies was driven by a mix of familiarity from previous projects and a desire to explore new technologies, like PreLine UI. This approach aimed to leverage existing expertise while incorporating new elements to enhance the app's development and user experience.

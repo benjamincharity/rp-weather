@@ -17,7 +17,7 @@ export function useValidateLatLong(latLongString: string | null): boolean {
     return false;
   }
   if (!latLongString) {
-    return handleError();
+    return true;
   }
   const latitude = latLongString?.split(",")[0];
   const longitude = latLongString?.split(",")[1];
