@@ -56,5 +56,6 @@ To set the weather comparison experience, I established base thresholds for diff
 - **Research and Integration of Existing Solutions**: Exploring and integrating established libraries for functionalities like search autocomplete can streamline development and enhance user experience.
 - **Lazy loading and bundle splitting**: Implementing lazy loading and bundle splitting can significantly improve the app’s performance, especially for mobile users.
 - **More engaging empty states**: Enhancing the app’s empty states with engaging visuals and helpful tips can improve user experience and retention.
+- **Leverage PWA and Service Workers**: Implementing PWA and service workers can significantly enhance the app’s performance and user experience, especially in low-connectivity scenarios. It also provides an opportunity to explore push notifications for weather alerts.
 
 By addressing these enhancements, the weather app can significantly improve its usability, visual appeal, and overall functionality, making it more informative and user-friendly.
